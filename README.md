@@ -1,4 +1,4 @@
-# image-template
+# image-template &nbsp; [![build badge](https://github.com/ryan-j-walker/cosmic-atomic/actions/workflows/build.yml/badge.svg)](https://github.com/ryan-j-walker/cosmic-atomic/actions/workflows/build.yml)
 
 # Purpose
 
