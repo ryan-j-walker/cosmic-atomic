@@ -1,0 +1,25 @@
+{
+    "base": {
+        "include": {
+            "base": [
+                "ublue-brew",
+                "uupd"
+            ]
+        },
+        "exclude": {
+            "base": [
+                "firefox",
+                "firefox-langpacks",
+                "fedora-bookmarks",
+                "fedora-chromium-config",
+                "nvtop",
+                "ublue-os-update-services"
+            ]
+        },
+        "group_include": {
+            "base": [
+                "development-tools"
+            ]
+        }
+    }
+}
