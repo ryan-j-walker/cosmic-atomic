@@ -26,6 +26,7 @@ systemctl enable uupd.service
 systemctl enable uupd.timer
 sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/fedora-cisco-openh264.repo
 sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/negativo17-fedora-multimedia.repo
+sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/vscode.repo
 
 for i in /etc/yum.repos.d/rpmfusion-*; do
     sed -i 's@enabled=1@enabled=0@g' "$i"

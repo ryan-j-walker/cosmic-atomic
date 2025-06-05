@@ -2,6 +2,7 @@
     "base": {
         "include": {
             "base": [
+                "code",
                 "ublue-brew",
                 "uupd"
             ]
