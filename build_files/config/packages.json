@@ -3,6 +3,7 @@
         "include": {
             "base": [
                 "code",
+                "easyeffects",
                 "ublue-brew",
                 "uupd"
             ]
