@@ -22,6 +22,11 @@ modules:
       with-optional: true # install optional packages from group
       packages:
         - cosmic-desktop
+    remove:
+      auto-remove: true
+      packages:
+        - firefox
+        - firefox-langpacks
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
