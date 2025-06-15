@@ -26,7 +26,10 @@ modules:
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
-    user: {} # Also add Flathub user repo, but no user packages
+    user:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub
+      repo-title: "Flathub"
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
