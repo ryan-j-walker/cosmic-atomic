@@ -23,8 +23,7 @@ modules:
       packages:
         - cosmic-desktop
         - cosmic-desktop-apps
-        # - gnome-keyring-pam
-        # - xdg-user-dirs
+        - window-managers
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
