@@ -34,7 +34,6 @@ modules:
         - cosmic-desktop
     install:
       packages:
-        - google-roboto-fonts
         - uupd
     remove:
       packages:
