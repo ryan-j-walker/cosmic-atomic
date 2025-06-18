@@ -50,6 +50,9 @@ modules:
       repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
       repo-name: flathub
       repo-title: Flathub
+      install:
+        - io.github.flattool.Warehouse
+        - com.github.tchx84.Flatseal
   
   - type: systemd
     system:
