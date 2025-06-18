@@ -62,9 +62,13 @@ modules:
     snippets:
       - "sed -i 's/AutomaticUpdatePolicy=.*/AutomaticUpdatePolicy=none/g' /etc/rpm-ostreed.conf" # Disable automatic updates per uupd instructions
       - "mv '/usr/share/fonts/google-fonts/Roboto/' /usr/share/fonts/"
-      - "mv '/usr/share/fonts/google-fonts/Roboto\ Mono/' /usr/share/fonts/"
-      - "mv '/usr/share/fonts/google-fonts/Roboto\ Serif/' /usr/share/fonts/"
+      - "mv '/usr/share/fonts/google-fonts/Roboto Mono/' /usr/share/fonts/"
+      - "mv '/usr/share/fonts/google-fonts/Roboto Serif/' /usr/share/fonts/"
       - "rm -rf /usr/share/fonts/google-fonts"
+      - "fc-cache --system-only --really-force '/usr/share/fonts/Roboto'"
+      - "fc-cache --system-only --really-force '/usr/share/fonts/Roboto Mono/'"
+      - "fc-cache --system-only --really-force '/usr/share/fonts/Roboto Serif'"
+      - "fc-cache --system-only --really-force '/usr/share/fonts/google-fonts'"
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
