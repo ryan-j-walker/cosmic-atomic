@@ -12,19 +12,15 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - type: files
-    files:
-      - source: system
-        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+  # - type: files
+  #   files:
+  #     - source: system
+  #       destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: fonts
     fonts:
       nerd-fonts:
         - FiraCode # don't add spaces or "Nerd Font" suffix.
-      google-fonts:
-        - Roboto
-        - Roboto Mono
-        - Roboto Serif
   
   - type: dnf
     repos:
@@ -38,6 +34,7 @@ modules:
         - cosmic-desktop
     install:
       packages:
+        - google-roboto-fonts
         - uupd
     remove:
       packages:
