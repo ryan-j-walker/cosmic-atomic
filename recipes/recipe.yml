@@ -16,16 +16,37 @@ modules:
   #   files:
   #     - source: system
   #       destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - FiraCode
+      google-fonts:
+        - Roboto
+        - Roboto Mono
+        - Roboto Serif
   
   - type: dnf
+    repos:
+      cleanup: true
+      copr:
+        enable:
+          - ublue-os/packages
     group-install:
       with-optional: true
       packages:
         - cosmic-desktop
+    install:
+      packages:
+        - uupd
     remove:
       packages:
         - firefox
         - firefox-langpacks
+  
+  - type: script
+    snippets:
+      - "sed -i 's/AutomaticUpdatePolicy=.*/AutomaticUpdatePolicy=none/g' /etc/rpm-ostreed.conf" # Disable automatic updates per uupd instructions
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
