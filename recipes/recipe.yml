@@ -44,6 +44,13 @@ modules:
         - firefox
         - firefox-langpacks
   
+  - type: systemd
+    system:
+      disabled:
+        - flatpak-system-update.timer
+      enabled:
+        - uupd.timer
+  
   - type: script
     snippets:
       - "sed -i 's/AutomaticUpdatePolicy=.*/AutomaticUpdatePolicy=none/g' /etc/rpm-ostreed.conf" # Disable automatic updates per uupd instructions
