@@ -40,6 +40,13 @@ modules:
         - firefox
         - firefox-langpacks
   
+  - type: brew
+    auto-update: true # enable auto-updates
+    update-interval: 4h
+    auto-upgrade: true # enable auto-upgrades
+    upgrade-interval: 4h
+    brew-analytics: false # disable telemetry
+
   - type: default-flatpaks
     notify: true
     user:
