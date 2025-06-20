@@ -37,22 +37,13 @@ modules:
         - firewall-config
         - fuse-encfs
         - gnome-disk-utility
+        - gvfs-smb
         - iwd
         - podman-compose
         - powertop
-        - qemu
-        - qemu-char-spice
-        - qemu-device-display-virtio-gpu
-        - qemu-device-display-virtio-vga
-        - qemu-device-usb-redirect
-        - qemu-img
-        - qemu-system-x86-core
-        - qemu-user-binfmt
-        - qemu-user-static
         - samba
         - setools-console
         - uupd
-        - virt-manager
     remove:
       auto-remove: true
       packages:
