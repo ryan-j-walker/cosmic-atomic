@@ -40,7 +40,6 @@ modules:
         - iwd
         - podman-compose
         - powertop
-        - pulseaudio-utils
         - qemu
         - qemu-char-spice
         - qemu-device-display-virtio-gpu
@@ -53,7 +52,7 @@ modules:
         - samba
         - setools-console
         - uupd
-        - wireguard-tools
+        - virt-manager
     remove:
       auto-remove: true
       packages:
