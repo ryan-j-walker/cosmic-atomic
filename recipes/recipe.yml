@@ -37,6 +37,7 @@ modules:
         - gnome-disk-utility
         - uupd
     remove:
+      auto-remove: true
       packages:
         - firefox
         - firefox-langpacks
