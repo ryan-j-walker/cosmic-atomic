@@ -70,7 +70,6 @@ modules:
         - io.missioncenter.MissionCenter
         - io.podman_desktop.PodmanDesktop
         - me.iepure.devtoolbox
-        - no.mifi.losslesscut
         - org.gnome.Calculator
         - org.gnome.Logs
         - org.gnome.Loupe
