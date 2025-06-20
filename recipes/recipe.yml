@@ -34,6 +34,7 @@ modules:
         - cosmic-desktop
     install:
       packages:
+        - gnome-disk-utility
         - uupd
     remove:
       packages:
@@ -42,9 +43,9 @@ modules:
   
   - type: brew
     auto-update: true # enable auto-updates
-    update-interval: 4h
+    update-interval: 6h
     auto-upgrade: true # enable auto-upgrades
-    upgrade-interval: 4h
+    upgrade-interval: 6h
     brew-analytics: false # disable telemetry
 
   - type: default-flatpaks
@@ -54,8 +55,29 @@ modules:
       repo-name: flathub
       repo-title: Flathub
       install:
-        - io.github.flattool.Warehouse
+        - best.ellie.StartupConfiguration
+        - com.github.PintaProject.Pinta
+        - com.github.iwalton3.jellyfin-media-player
         - com.github.tchx84.Flatseal
+        - com.github.wwmm.easyeffects
+        - com.jwestall.Forecast
+        - com.makemkv.MakeMKV
+        - com.visualstudio.code
+        - dev.heppen.webapps
+        - io.github.dvlv.boxbuddyrs
+        - io.github.flattool.Warehouse
+        - io.missioncenter.MissionCenter
+        - io.podman_desktop.PodmanDesktop
+        - me.iepure.devtoolbox
+        - no.mifi.losslesscut
+        - org.gnome.Calculator
+        - org.gnome.Logs
+        - org.gnome.Loupe
+        - org.gnome.Papers
+        - org.gnome.baobab
+        - org.gtk.Gtk3theme.adw-gtk3
+        - org.gtk.Gtk3theme.adw-gtk3-dark
+        - sh.loft.devpod
   
   - type: systemd
     system:
