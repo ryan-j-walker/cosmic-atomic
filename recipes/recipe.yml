@@ -34,8 +34,16 @@ modules:
         - cosmic-desktop
     install:
       packages:
+        - firewall-config
+        - fuse-encfs
         - gnome-disk-utility
+        - iwd
+        - powertop
+        - pulseaudio-utils
+        - samba
+        - setools-console
         - uupd
+        - wireguard-tools
     remove:
       auto-remove: true
       packages:
