@@ -56,6 +56,7 @@ modules:
     auto-upgrade: true # enable auto-upgrades
     upgrade-interval: 6h
     brew-analytics: false # disable telemetry
+    nofile-limits: true # increase nofile limits
 
   - type: default-flatpaks
     notify: true
